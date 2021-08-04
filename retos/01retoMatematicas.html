@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reto JS Challenge julio 2021</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="enlace" href="#">Nosotros</a>
+                    </li>
+                    <li>
+                        <a class="enlace" href="#">Otras figuras</a>
+                    </li>
+                    <li>
+                        <a class="enlace" href="https://www.linkedin.com/in/alvaro-gamez-chavez-97617719" target="_blank">Mi
+                            página</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="bordes">
+           <header>
+                <h2>Calculadora de figuras (áreas y perímetros)</h2>
+                <p>2 triangulos, 1 cuadrado y 1 círculo</p>
+           </header>
+           <section>
+               <form action="#" class="main__section--form" name="formulario", id="formulario">
+                    <input type="number" name="PI" id="Pi" placeholder="PI = 3.141592" disabled>
+                    <input type="number" name="lado1" id="lado1" placeholder="Lado 1, Radio, Altura">
+                    <input type="number" name="lado2" id="lado2" placeholder="Lado 2">
+                    <input type="number" name="lado3" id="lado3" placeholder="Lado 3, Base">
+
+                    <div class="section__form--div">
+                        <span>|
+                        <label for="equilatero">Triángulo Equilatero</label>
+                            <input type="checkbox" name="equilatero" id="equilatero"><span>|
+                        <label for="isosceles">Triángulo Isosceles</label>
+                            <input type="checkbox" name="isosceles" id="isosceles"><span>|
+                        <label for="cuadrado">Cuadrado</label>
+                            <input type="checkbox" name="cuadrado" id="cuadrado"><span>|
+                        <label for="circulo">Círculo</label>
+                            <input type="checkbox" name="circulo" id="circulo">
+                    </div>
+                    <div class="buttons">
+                        <input type="button" value="Calcular área y perímetro" onclick="habilitaFifuras()">
+                        <input type="button" value="Limpar campos" onclick="limpiaCampos()">
+                    </div>
+               </form>
+           </section>
+        </main>
+        <footer class="bordes">
+            <section class="bordes">
+                <p>Programador</p>
+                <p>Alvaro Gamez Chavez</p>
+            </section>
+            <section class="bordes">
+                <p>Curso</p>
+                <p>Reto JS Challenge Julio 2021</p>
+            </section>
+            <section class="bordes">
+                <p>Herramientas</p>
+                <img src="HTML5_CSS3_JS.png" class="footer__section--img" alt="Logos HTML5, CSS3, JS" />
+            </section>
+        </footer>
+        <script src="01matematicasEnJS.js"></script>
+    </body>
+
+</html>
