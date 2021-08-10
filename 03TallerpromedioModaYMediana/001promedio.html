@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es"
+    dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Taller práctico de JS Reti JS Challenge</title>
+    </head>
+    <body onload="getArray()">
+        <h1>Promedio, Mediana, Moda</h1>
+        <section id="seccionMediaAritmetica">
+            <P>
+                La media aritmética del arreglo <span id="arreglo"></span> es de <span id="resultado"></span>
+            </P>
+            <p>
+                La Mediana del arreglo [<span id="arreglo2"></span>] es de <span id="resultado2"></span>
+            </p>
+            <p>
+                La moda del arreglo [<span id="arreglo3"></span>] es (son)<br><span id="resultado3"></span>
+            </p>
+            <button type="button" onclick="mediaAritmetica()">Precionar aquí pára ver el resultado Media aritmética</button>
+            <br>
+            <button id="mediana" onclick="resultados()">Presionar aquí para ver el resultado de la Mediana</button>
+            <button id="moda" onclick="Modas()">Presionar aqui para obtener la Moda</button>
+        </section>
+        <script src="js/001promedio.js"></script>
+        <script src="js/002mediana.js"></script>
+        <script src="js/03moda.js"></script>
+    </body>
+</html>
